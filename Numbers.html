@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="zh-hant" class="js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths is-pc is-chrome is-page-open">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>iSCIM | Numbers</title>
+    <meta
+      name="iSCIM"
+      content="The wisdom and ingenious computational power of ancient people are revealed by the Bazi of the East or the Numerology of the West.
+      In this Internet Age, verified by science and aided with computational intelligence, we will simplify the cumbersome manual calculations.
+      This enables everyone to know quickly the relationship between oneself and the world, and adopting our customized natural therapy, 
+      the users can maintain their body and mind in their best state."
+    />
+    <meta name="apple-mobile-web-app-title" content="ISCIM" />
+    <meta name="msapplication-TileColor" content="#b91d47" />
+    <meta name="theme-color" content="#3f51b5" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+    <link rel = "icon" type = "image/png" href = "./r/logo/iscim-logo-03.png">
+    
+    <!-- google fonts__Noto Serif TC -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC&display=swap" rel="stylesheet">
+
+    <!-- css -->
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="stylesheet" href="./style/i-style.css" />
+    <link rel="stylesheet" href="./style/css/Numbers.css" />
+      
+    <!-- vue -->
+    <script src="./js/vue.js"></script>
+    <script src="./js/imask.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+
+    <!-- icon -->
+    <script src="https://kit.fontawesome.com/cf44a464b8.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body id="top">
+    <section class="common-part">
+      <div id="commonPart"></div>
+      <div class="angleUp">
+        <i class="fa-solid fa-angles-up"></i>
+      </div>
+    </section>
+
+    <main class="l-main is-Numbers">
+      <div id="content" class="l-content p-numbers i-numbers">
+        <section class="l-content__header">
+          <h1 class="l-content__heading">
+            Numbers
+          </h1>
+          <div id="iCalculator"></div>
+        </section>
+
+        <section class="l-content__body">
+          <section class="p-chart p-numbers__section">
+            <h3 class="c-heading c-text-mask js-text-anim">Solar Horoscope</h3>
+            <div class="p-chart__box">
+              <div class="p-chart__box-img">
+                <img src="./r/Numbers/base.jpg" alt="Chart" class="u-img-responsive">
+              </div>                      
+              <div class="p-chart__box-lists">
+                <ul>
+                  <li class="p-numbers-list__body">
+                    <h2 class="p-numbers-list__heading">Birthday：
+                      <span id="today">2022-01-02</span>
+                    </h2>
+                  </li>
+                  <li class="p-numbers-list__body">
+                    <h2 class="p-numbers-list__heading">Birth Number：
+                      <span id="birth">2</span>
+                    </h2>
+                  </li>
+                  <li class="p-numbers-list__body">
+                    <h2 class="p-numbers-list__heading">Star Sign Number：
+                      <span id="sign">1</span>
+                    </h2>
+                  </li>
+                  <li class="p-numbers-list__body">
+                    <h2 class="p-numbers-list__heading">Spirit Number：
+                      <span id="spirit">9</span>
+                    </h2>
+                  </li>
+                  <li class="p-numbers-list__body">
+                    <h2 class="p-numbers-list__heading">Life Number：
+                      <span id="destiny">9</span>
+                    </h2>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
+          <section class="p-chart p-numbers__section">
+            <h3 class="c-heading c-text-mask js-text-anim">Lunar Horoscope</h3>
+            <div class="p-chart__box">
+              <div class="p-chart__box-img">
+                <img src="./r/Numbers/base.jpg" alt="Chart" class="u-img-responsive">
+              </div>                      
+              <div class="p-chart__box-lists">
+                <ul>
+                  <li class="p-numbers-list__body">
+                    <h2 class="p-numbers-list__heading">Birthday：
+                      <span id="today">2022-01-02</span>
+                    </h2>
+                  </li>
+                  <li class="p-numbers-list__body">
+                    <h2 class="p-numbers-list__heading">Birth Number：
+                      <span id="birth">2</span>
+                    </h2>
+                  </li>
+                  <li class="p-numbers-list__body">
+                    <h2 class="p-numbers-list__heading">Star Sign Number：
+                      <span id="sign">1</span>
+                    </h2>
+                  </li>
+                  <li class="p-numbers-list__body">
+                    <h2 class="p-numbers-list__heading">Spirit Number：
+                      <span id="spirit">9</span>
+                    </h2>
+                  </li>
+                  <li class="p-numbers-list__body">
+                    <h2 class="p-numbers-list__heading">Life Number：
+                      <span id="destiny">9</span>
+                    </h2>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </section>
+          
+          <section class="p-numbers-products p-numbers__section">
+            <h3 class="c-heading c-text-mask js-text-anim">Preliminary Analysis</h3>
+            <form action="">
+              <div class="Primary_unlockBtn">
+                <div>
+                  <label for="">Total：</label>
+                  <span id="shop-sum-all">0</span>
+                  <span>iPoints</span>
+                </div>
+                <div class="i-button-2">UNLOCK</div>
+              </div>
+              <ul class="p-numbers-list">                
+                <li class="p-numbers-list__item js-onscreen">
+                  <div class="p-numbers-list__thumb c-thumb">
+                    <div class="c-thumb__inner">
+                      <a href="#crash-hesitation">
+                        <img
+                          id="imgCH"
+                          src="./r/Numbers/ratio_1.jpg"
+                          alt="Crash Hesitate Ratio"
+                        >
+                      </a>
+                    </div>
+                  </div>
+                  <div class="p-numbers-list__body">
+                    <div class="Primary_Unlock_box">
+                      <input type="checkbox">
+                      <h2 class="p-numbers-list__title">Crash/Hesitation Index</h2>
+                    </div>
+                    <a href="#">
+                      <p class="p-numbers-list__text">
+                        Crash Index, degree of susceptibility; Hesitation Index, degree of indecisiveness.
+                      </p>
+                    </a>
+                  </div>
+                </li>
+                <li class="p-numbers-list__item js-onscreen">
+                  <div class="p-numbers-list__thumb c-thumb">
+                    <div class="c-thumb__inner">
+                      <a href="#ration-emotion">
+                        <img 
+                          id="imgRE"
+                          src="./r/Numbers/ratio_2.jpg" 
+                          alt="Rationality Emotion Ratio"
+                        >
+                      </a>
+                    </div>
+                  </div>
+                  <div class="p-numbers-list__body">
+                    <div class="Primary_Unlock_box">
+                      <input type="checkbox">
+                      <h2 class="p-numbers-list__title">
+                        Rationality / Sensibility Ratio
+                      </h2>
+                    </div>
+                    <p class="p-numbers-list__text">
+                      When thinking, people with a high proportion of rationality preference focus on logic and feasibility, whereas people with a high proportion of sensibility preference pay more attention to the harmony of feelings and interpersonal relationships.
+                    </p>
+                  </div>
+                </li>
+                <li class="p-numbers-list__item js-onscreen">
+                  <div class="p-numbers-list__thumb c-thumb">
+                    <div class="c-thumb__inner">
+                      <a href="#5-traits">
+                        <img 
+                          id="img5T"
+                          src="./r/Numbers/ratio_3.jpg" 
+                          alt="5 Traits Ratio"
+                        >
+                      </a>
+                    </div>
+                  </div>
+                  <div class="p-numbers-list__body">
+                    <div class="Primary_Unlock_box">
+                      <input type="checkbox">
+                      <h2 class="p-numbers-list__title">5 Traits Ratio</h2>
+                    </div>
+                    <p class="p-numbers-list__text">
+                      1. Creativity: Goals, Problem Solving and Decision Making.
+                      2. Stability: Stability, Patience and Sustainability.
+                      3. Image: Imagination, Inspiration and Creativity.
+                      4. Balance: Balance, Organization and Architecture Capabilities
+                      5. Autonomy: Autonomy, Independence and Plasticity
+                    </p>
+                  </div>
+                </li>
+                <li class="p-numbers-list__item js-onscreen">
+                  <div class="p-numbers-list__thumb c-thumb">
+                    <div class="c-thumb__inner">
+                      <a href="#spirit-mind-body">
+                        <img 
+                          id="imgSMB"
+                          src="./r/Numbers/ratio_4.jpg" 
+                          alt="Spirit Mind Body Ratio"
+                        >
+                      </a>
+                    </div>
+                  </div>
+                  <div class="p-numbers-list__body">
+                    <div class="Primary_Unlock_box">
+                      <input type="checkbox">
+                      <h2 class="p-numbers-list__title">Body / Mind / Spirit Ratio</h2>
+                    </div>
+                    <p class="p-numbers-list__text">
+                      When dealing with problems, people with a high proportion of body influence prefer to do it by themselves, people with a high proportion of mind influence are more able to conceive solutions, and people with a high proportion of spirit influence are more able to feel the essence and spiritual level of the problem.
+                    </p>
+                  </div>
+                </li>
+                <li class="p-numbers-list__item js-onscreen">
+                  <div class="p-numbers-list__thumb c-thumb">
+                    <div class="c-thumb__inner">
+                      <a href="#odd-even">
+                        <img
+                          id="imgOE"
+                          src="./r/Numbers/ratio_5.jpg" 
+                          alt="Odd Even Ratio"
+                        >
+                      </a>
+                    </div>
+                  </div>
+                  <div class="p-numbers-list__body">
+                    <div class="Primary_Unlock_box">
+                      <input type="checkbox">
+                      <h2 class="p-numbers-list__title">Odd / Even Ratio</h2>
+                    </div>
+                    <p class="p-numbers-list__text">
+                      People with a high proportion of odd numbers in their birthdates tend to be independent and decisive in personality, while those with a high proportion of even numbers in their birthdates tend to be cooperative and dependent.
+                    </p>
+                  </div>
+                </li>
+                <li class="p-numbers-list__item js-onscreen">
+                  <div class="p-numbers-list__thumb c-thumb">
+                    <div class="c-thumb__inner">
+                      <a href="#nature-odd-even">
+                        <img
+                          id="imgNaOE"
+                          src="./r/Numbers/ratio_6.jpg" 
+                          alt="Nature Odd Even Ratio"
+                        >
+                      </a>
+                    </div>
+                  </div>
+                  <div class="p-numbers-list__body">
+                    <div class="Primary_Unlock_box">
+                      <input type="checkbox">
+                      <h2 class="p-numbers-list__title">Innate Odd / Even ratio</h2>
+                    </div> 
+                    <p class="p-numbers-list__text">
+                      People with a high proportion of odd numbers in their birthdates tend to be independent and decisive in personality, while those with a high proportion of even numbers in their birthdates tend to be cooperative and dependent.
+                    </p>
+                  </div>
+                </li>
+                <li class="p-numbers-list__item js-onscreen">
+                  <div class="p-numbers-list__thumb c-thumb">
+                    <div class="c-thumb__inner">
+                      <a href="#nurture-odd-even">
+                        <img
+                          id="imgNurOE"
+                          src="./r/Numbers/ratio_7.jpg" 
+                          alt="Nurture Odd Even Ratio"
+                        >
+                      </a>
+                    </div>
+                  </div>
+                  <div class="p-numbers-list__body">
+                    <div class="Primary_Unlock_box">
+                      <input type="checkbox">
+                      <h2 class="p-numbers-list__title">Acquired Odd / Even ratio</h2>
+                    </div>
+                    <p class="p-numbers-list__text">
+                      People with a high proportion of odd numbers in their birthdates tend to be independent and decisive in personality, while those with a high proportion of even numbers in their birthdates tend to be cooperative and dependent.
+                    </p>
+                  </div>
+                </li>              
+                <li class="p-numbers-list__item js-onscreen">
+                  <div class="p-numbers-list__thumb c-thumb">
+                    <div class="c-thumb__inner">
+                      <a href="#7-chakras">
+                        <img
+                          id="img7" 
+                          src="./r/Numbers/chakra.jpg" 
+                          alt="7-chakras"
+                        >
+                      </a>
+                    </div>
+                  </div>
+                  <div class="p-numbers-list__body">
+                    <div class="Primary_Unlock_box">
+                      <input type="checkbox">
+                      <h2 class="p-numbers-list__title">7 Chakras Chart</h2>
+                    </div>
+                    <div class="p-numbers-list__text">
+                      <img src="./r/Numbers/7intro.png" alt="">
+                    </div>
+                  </div>
+                </li>
+                <li class="p-numbers-list__item js-onscreen">
+                  <div class="p-numbers-list__thumb c-thumb">
+                    <div class="c-thumb__inner">
+                      <a href="#ego-chakras">
+                        <img
+                          id="imgEC" 
+                          src="./r/Numbers/chakra.jpg" 
+                          alt="ego-chakras"
+                        >
+                      </a>
+                    </div>
+                  </div>
+                  <div class="p-numbers-list__body">
+                    <div class="Primary_Unlock_box">
+                      <input type="checkbox">
+                      <h2 class="p-numbers-list__title">Ego Chakras Chart</h2>
+                    </div>
+                    <div class="p-numbers-list__text">
+                      <img src="./r/Numbers/5intro.png" alt="">
+                    </div>
+                  </div>
+                </li>
+                <li class="p-numbers-list__item js-onscreen">
+                  <div class="p-numbers-list__thumb c-thumb">
+                    <div class="c-thumb__inner">
+                      <a href="#self-chakras">
+                        <img
+                          id="imgSC"
+                          src="./r/Numbers/chakra.jpg" 
+                          alt="self-chakras"
+                        >
+                      </a>
+                    </div>
+                  </div>
+                  <div class="p-numbers-list__body">
+                    <div class="Primary_Unlock_box">
+                      <input type="checkbox">
+                      <h2 class="p-numbers-list__title">Self Chakras Chart</h2>
+                    </div>
+                    <div class="p-numbers-list__text">
+                      <img src="./r/Numbers/10intro.png" alt="">
+                    </div>
+                  </div>
+                </li>
+                <li class="p-numbers-list__item js-onscreen">
+                  <div class="p-numbers-list__thumb c-thumb">
+                    <div class="c-thumb__inner">
+                      <a href="#whole-chakras">
+                        <img 
+                          id="imgWC"
+                          src="./r/Numbers/chakra.jpg" 
+                          alt="whole-chakras"
+                        >
+                      </a>
+                    </div>
+                  </div>
+                  <div class="p-numbers-list__body">
+                    <div class="Primary_Unlock_box">
+                      <input type="checkbox">
+                      <h2 class="p-numbers-list__title">Whole Chakras Chart</h2>
+                    </div>
+                    <div class="p-numbers-list__text">
+                      <img src="./r/Numbers/wholeintro.png" alt="">
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </form>
+            <div>
+              <a href="#?" class="lightbox" id="crash-hesitation">
+                <img
+                  class="imgZoom" 
+                  src="./r/Numbers/ratio_1.jpg" 
+                >
+              </a>
+              <a href="#?" class="lightbox" id="ration-emotion">
+                <img
+                  class="imgZoom" 
+                  src="./r/Numbers/ratio_2.jpg" 
+                >
+              </a>
+              <a href="#?" class="lightbox" id="5-traits">
+                <img
+                  class="imgZoom" 
+                  src="./r/Numbers/ratio_3.jpg" 
+                >
+              </a>
+              <a href="#?" class="lightbox" id="spirit-mind-body">
+                <img
+                  class="imgZoom" 
+                  src="./r/Numbers/ratio_4.jpg" 
+                >
+              </a>
+              <a href="#?" class="lightbox" id="odd-even">
+                <img
+                  class="imgZoom" 
+                  src="./r/Numbers/ratio_5.jpg" 
+                >
+              </a>
+              <a href="#?" class="lightbox" id="nature-odd-even">
+                <img
+                  class="imgZoom" 
+                  src="./r/Numbers/ratio_6.jpg" 
+                >
+              </a>
+              <a href="#?" class="lightbox" id="nurture-odd-even">
+                <img
+                  class="imgZoom" 
+                  src="./r/Numbers/ratio_7.jpg" 
+                >
+              </a>
+              <a href="#?" class="lightbox" id="7-chakras">
+                <img
+                  class="imgZoom" 
+                  src="./r/Numbers/chakra.jpg" 
+                >
+              </a>
+              <a href="#?" class="lightbox" id="ego-chakras">
+                <img
+                  class="imgZoom" 
+                  src="./r/Numbers/chakra.jpg" 
+                >
+              </a>
+              <a href="#?" class="lightbox" id="self-chakras">
+                <img
+                  class="imgZoom" 
+                  src="./r/Numbers/chakra.jpg" 
+                >
+              </a>
+              <a href="#?" class="lightbox" id="whole-chakras">
+                <img
+                  class="imgZoom" 
+                  src="./r/Numbers/chakra.jpg" 
+                >
+              </a>
+            </div>
+          </section>
+          
+        </section>
+      </div>
+    </main>
+    <footer id="iFoot"></footer>
+
+    <!-- vue -->
+    <script src="./js/vue/vueCommonPart.js"></script>
+    <script src="./js/vue/vueNumbers.js"></script>
+    <!-- JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="./js/v2.0/analytics.js"></script>
+    <script src="./js/v2.0/lib.js"></script>
+    <script src="./js/v2.0/bundle.js"></script>
+    <script src="./js/scroll.js"></script>
+    <script 
+      type="text/javascript" 
+      src="./js/v2.0/wp-embed.js" 
+      id="wp-embed-js"
+    ></script>
+    <!-- imask -->
+    <script src="./js/imask/datePicker.js"></script>
+    <script src="./js/imask/timePicker.js"></script>
+  </body>
+</html>

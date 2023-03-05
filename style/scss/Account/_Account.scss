@@ -1,0 +1,139 @@
+
+.c-form__group {
+  margin: 10px auto;
+  padding: 5px 20px 5px;
+}
+.c-form__heading {
+  font-size: 2rem;
+}
+@media screen and (max-width: 767px) {
+  .c-form__heading{
+    font-size: 1.5rem;
+  }
+}
+.c-form__body {
+  font-size: 1.8rem;
+}
+.c-form__body input {
+  height: 48px;
+}
+@media screen and (max-width: 767px) {
+  .c-form__body{
+    font-size: 1.3rem;
+  }
+}
+
+.l-content__header{
+  text-align: center;
+}
+.l-content__header img{
+  width: 200px;
+  margin: 40px auto 10px;
+}
+.l-content__heading{
+  overflow: visible;
+}
+.i-notice p{
+  color: black;
+}
+
+.hr {
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+}
+.line {
+  display: inline-block;
+  width: 40%;
+  border-top: 1px solid #000000;
+}
+.text {
+  color: #555;
+  vertical-align: middle;
+}
+
+// social login
+
+.login-otherway {
+  color: rgba(0, 0, 0, 0.87);
+  margin: 0 auto 2vw;
+  max-width: 100%;
+  overflow: visible;
+  position: relative;
+  text-align: left;
+}
+.login-otherway-form {
+  display: block;
+  color: rgba(0, 0, 0, 0.87);
+}
+.login-otherway-list {
+  list-style: none;
+  margin: 1em 0;
+  padding: 0;
+}
+.login-otherway-list-item {
+  margin-bottom: 15px;
+  text-align: center;
+  direction: ltr;
+  display: list-item;
+}
+.login-otherway-btn {
+  width: 300px;
+  text-align: -webkit-center;
+  font-weight: 500;
+  line-height: normal;
+  padding: 8px 8px;
+  border: 1px solid #4d4d4d;
+  border-radius: 10px;
+}
+.login-otherway-btn:hover {
+  border: 3px outset #cd9b8c;
+}
+.login-otherway-btn:active {
+  border: 1px solid #cd9b8c;
+}
+.login-otherway-icon-wrapper {
+  display: table-cell;
+  vertical-align: middle;
+  font-weight: 500;
+  line-height: normal;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0;
+}
+.login-otherway-icon {
+  border: none;
+  display: inline-block;
+  height: 18px;
+  vertical-align: middle;
+  width: 18px;
+}
+.login-otherway-text {
+  text-align: center;
+  font-size: 1.6rem;
+}
+@media screen and (max-width: 767px) {
+  .login-otherway-text{
+    font-size: 1.4rem;
+  }
+}
+
+.itemPasw{
+  display: flex;
+  align-items: center;
+}
+.passHidden{
+  display: none;
+}
+.imgPasw{
+  width: 30px;
+}
+.passBtn, .repassBtn{
+  margin-left: 5px;
+  cursor: pointer;
+}
+@media screen and (max-width: 767px) {
+  .imgPasw{
+    width: 24px
+  }
+}

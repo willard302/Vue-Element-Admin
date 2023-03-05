@@ -1,0 +1,7 @@
+@import '../Common/base', '../Common/header', '../Common/nav', '../Common/TransactionRecord', '../Common/menu';
+
+@media screen and (max-width: 767px) {
+  .i-list {
+    width: 260px;
+  }
+}

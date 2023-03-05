@@ -1,0 +1,215 @@
+@import "../Common/base", "../Common/header", "../Common/nav", "../Common/menu";
+
+
+.l-content__heading {
+    text-align: center;
+}
+
+.l-content__body {
+    min-width: 96%;
+}
+
+.c-button-2 {
+    width: 250px;
+}
+
+.c-buttons:after {
+    background-color: white;
+}
+
+.i-list_reward {
+    border: 2px double black;
+}
+
+.i-list_reward-inner {
+    border: 2px double black;
+}
+
+.account-form-1 {
+    width: 100%;
+    border-collapse: collapse;
+    margin: auto;
+    transition: opacity 1s ease 0.8s;
+    transform-origin: right;
+    opacity: 0;
+}
+
+.is-onscreen .account-form-1 {
+    opacity: 1;
+}
+
+.account-form-1__header tr {
+    height: 70px;
+    border: none;
+}
+
+.account-form-1__header tr th {
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+.account-line-1 th {
+    border-top: 1px solid black;
+}
+
+.account-form-1 tbody tr td {
+    text-align: center;
+    font-size: 1.4rem;
+    padding: 5px;
+    width: 180px;
+}
+
+.account-form-1 tbody tr td a span {
+    line-height: 1.4;
+}
+
+.account-form-1__item-1 {
+    font-size: 1.6rem;
+    font-weight: bold;
+    border-right: 1px solid #4d4d4d;
+}
+
+.account-form-1__item-2 {
+    background-color: #CD9B8C;
+    color: white;
+}
+
+.account-form-1__item-2 a {
+    color: white;
+}
+
+.account-form-1__item-2 span {
+    color: white;
+}
+
+.account-line-1 td {
+    border-top: 1px solid #4d4d4d;
+}
+
+.account-line-1 td a:hover {
+    font-weight: bold;
+}
+
+.account-form-1S {
+    display: none;
+}
+
+.i-button-4 {
+    box-shadow: inset 0px 1px 0px 0px #e184f3;
+    background: linear-gradient(to bottom, #c123de 5%, #a20dbd 100%);
+    background-color: #c123de;
+    border-radius: 6px;
+    border: 1px solid #a511c0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 6px 8px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #9b14b3;
+    height: 80px;
+}
+
+.i-button-4:hover {
+    background: linear-gradient(to bottom, #a20dbd 5%, #c123de 100%);
+    background-color: #a20dbd;
+}
+
+.i-button-4:active {
+    position: relative;
+    top: 1px;
+}
+
+@media screen and (max-width: 1023px) {
+    .account-form-1__header tr th {
+        font-size: 1.2rem;
+    }
+
+    .account-form-1 tbody tr td {
+        width: auto;
+        font-size: 1rem;
+    }
+
+    .account-form-1__item-1 {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .account-form-1 {
+        display: none;
+    }
+
+    .account-form-1S {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 100%;
+    }
+
+    .account-form-1s__group {
+        max-width: 90%;
+        text-align: center;
+    }
+
+    .account-form-1s__heading {
+        border-bottom: 1px solid black;
+        font-size: 2rem;
+    }
+
+    .account-list-1s {
+        padding: 5px auto;
+    }
+
+    .account-list-1s__ref {
+        border: 1px dashed rgb(185, 1, 185);
+    }
+
+    .account-list-1s__title {
+        font-weight: 700;
+    }
+
+    .account-list-1s__item {
+        font-size: 1.4rem;
+    }
+
+    .i-button-3 {
+        margin-top: 10px;
+    }
+
+    .i-button-3 a {
+        border-bottom: 3px solid #CD9B8C;
+    }
+
+    .i-button-3 a span {
+        font-size: 1.6rem;
+        font-weight: bold;
+    }
+
+    .i-button-4 {
+        height: 40px;
+        font-size: 9px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .account-form-1s__heading {
+        font-size: 2rem;
+    }
+    
+    .account-list-1s__item {
+        font-size: 1.2rem;
+    }
+
+    .i-button-3 a span {
+        font-size: 1.6rem;
+    }
+}

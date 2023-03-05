@@ -1,0 +1,43 @@
+@import '../Common/base', '../Common/header', '../Common/nav', '../Common/menu', '../Common/Store';
+
+.c-button-2 {
+  width: 250px;
+  padding: 10px 15px;
+}
+
+@media screen and (max-width: 767px) {
+  .i-list {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .i-list {
+    width: 250px;
+  }
+}
+
+.i-list__sum {
+  display: flex;
+  justify-content: center;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.i-list__sum-item {
+  text-align: center;
+}
+
+.p-text {
+  text-align: left;
+}
+
+.shop-check {
+  transform: scale(2);
+}
+
+@media screen and (max-width: 767px) {
+  .shop-check {
+    margin-top: 10px;
+  }
+}

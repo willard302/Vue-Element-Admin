@@ -1,0 +1,42 @@
+[
+    {
+        "title": "introduce",
+        "text":[
+            "To enhance our understanding and management of human disease, modern medical research increasingly relies on the analysis of large patient data repositories. The ISCIM Medical Computing Center focuses on phsiological data analysis, statistics and computing in human disease research, and translates research findings into clinical practice.",
+            "Topics covered include: computational strategies for personalized medicine, identification of disease types via analysis of electronic medical records, and case studies of complex human diseases.",
+            "The ISCIM Medical Computing Center is equipped with advanced numerical simulation methods for modeling and calculating the various parts of human body, ranging from molecules, organs, systems to the whole body, with the intention of building ultimately a holistic healthcare system.",
+            "To represent accurately complex physiological systems so that right decisions can be made at all levels, models are designed to analyze attributes of health and disease. For different kinds of customers, from patients to doctors, the ISCIM Medical Computing Center can provide the best strategies, which are based on the most advanced computing capabilities and methods."
+        ]
+    },
+    {
+        "title": "service",
+        "text":[
+            {
+                "item": "Bio Feedback",
+                "content":[
+                    "Biofeedback is a technique that you can use to learn to adjust and control certain body's functions, such as your heart rate. During biofeedback, the instrument helps you correct and restore the state of your body via stimulation by sound, light, electricity, etc.",
+                    "Biofeedback at the ISCIM Medical Computing Center can help you make subtle changes in your body, such as relaxing certain muscles, and to achieve the results you want, such as pain relief. Essentially, biofeedback is a new way of fine-tuning the body, often to improve a health or physical performance."
+                ]
+            },
+            {
+                "item": "ISCIM Medical Computing Center Biofeedback Types",
+                "content": [
+                    "According to different health problems and goals, the ISCIM Medical Computing Center offers various biofeedback methods. Types of biofeedback include:",
+                    "1. Brain waves: Brain waves are monitored using scalp sensors and electroencephalograph (EEG).",
+                    "2. Breathing: Sensors are placed around your abdomen and chest to monitor your breathing pattern and rate.",
+                    "3. Heart Rate: Finger or earlobe sensors are used to detect changes in blood volume. Or an electrocardiograph (ECG) is used to measure your heart rate and how it varies.",
+                    "4. Muscle Contractions: An electromyograph (EMG) is used to monitor muscle contractions.",
+                    "5. Sweat Gland Activity: Sensors with an electrodermograph (EDG) are placed around your fingers, or on your palm or wrist to measure sweat gland activity and the amount of sweat on your skin, alerting you to anxiety.",
+                    "6. Temperature: Sensors are attached to your fingers or feet to measure blood flow to the skin. Body temperature usually drops when under stress, so a low reading can prompt you to begin relaxation techniques."
+                ]
+            },
+            {
+                "item": "Time-Space Medicine",
+                "content": [
+                    "Human mind, emotion, physical energy and the operations of the endocrine and immune systems change with season, day and night, and the environment. Some diseases are prevalent in a specific season or in certain months of the year, while others occur mostly during the day or at night or at a certain time of the day; some medicine work better for a certain period of time; the diseases prevalent in the tropical zone are different from those in the frigid zone; people in some areas are prone to certain diseases, and so on. All of the above belong to the research scope of time-space medicine: to study the temporal and spatial correlation between human psychological and physical health status and the place where they live.",
+                    "A fertilized egg stays and develops in a woman's womb for ten months before birth. During pregnancy, the mother's mood and endocrine, and hence the innate constitution of the fetus, are influenced by the surrounding light, temperature, humidity, etc. The ISCIM Medical Computing Center establishes a system based on the seasonal and circadian rhythms, and the latitude and longitude coordinates. Through big data analysis, the correlations between human personality, emotion, physiology, pathology and time and space are summarized. To enjoy the cloud services provided by Time-Space Medicine, guests or members of ISCIM are requested to enter the current year, month, day and time, and the longitude and latitude of their current positions. Right away, they will receive the corresponding physical and mental health advice of the day."
+                ]
+            }
+        ]
+    }
+]

@@ -1,0 +1,51 @@
+@import "../Common/base", "../Common/header", "../Common/nav", "../Common/btn", "../Account/Account", "../Common/menu", "../Common/form";
+
+.i-register {
+  width: 80%;
+  margin: auto;
+}
+
+.c-button-2 {
+  width: 160px;
+  padding: 15px 30px;
+}
+
+.alert {
+  font-size: 1rem;
+  color: red;
+}
+
+@media (max-width: 1023px) {
+  .i-register {
+    width: 90%;
+  }
+
+  .i-menu {
+    flex-direction: column-reverse;
+  }
+
+  .c-button-2 {
+    width: 300px;
+  }
+}
+
+@media (max-width: 767px) {
+  .i-register {
+    width: 400px;
+  }
+}
+
+@media (max-width: 540px) {
+  .c-button-2{
+    width: 80vw;
+  }
+}
+
+@media (max-width: 390px) {
+  .i-register {
+    width: 100%;
+  }
+  .c-button-2{
+    width: 90vw;
+  }
+}

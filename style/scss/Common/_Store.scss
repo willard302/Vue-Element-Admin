@@ -1,0 +1,20 @@
+.l-content__heading {
+  text-align: center;
+}
+.l-content__header {
+  padding: 10vw 2vw 2vw;
+}
+@media screen and (max-width: 767px) {
+  .l-content__header {
+    padding: 120px 2vw 4vw;
+  }
+}
+.c-heading{
+  padding-bottom: 40px;
+}
+@media screen and (max-width: 767px) {
+  .c-heading{
+    padding-bottom: 20px;
+    border-bottom: 3px groove #d5a89a;
+  }
+}

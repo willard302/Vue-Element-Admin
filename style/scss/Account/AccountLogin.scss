@@ -1,0 +1,23 @@
+@import "../Common/base", "../Common/header", "../Common/nav", "../Account/Account", "../Common/menu";
+
+.c-button-2{
+  width: 300px;
+}
+.i-menu{
+  flex-direction: column;
+}
+.i-account {
+  width: 600px;
+  margin: auto;
+}
+
+@media screen and (max-width: 767px) {
+  .i-account{
+    width: 90%;
+  }
+}
+@media screen and (max-width: 390px) {
+  .i-account{
+    width: 100%;
+  }
+}

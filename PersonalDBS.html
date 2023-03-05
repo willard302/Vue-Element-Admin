@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html
+  lang="zh-hant"
+  class="js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths is-pc is-chrome is-page-open"
+>
+  <head>
+    <meta charset="UTF-8" />
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>iSCIM | Member List | User Permissions Management</title>
+    <meta
+      name="iSCIM"
+      content="The wisdom and ingenious computational power of ancient people are revealed by the Bazi of the East or the Numerology of the West.
+      In this Internet Age, verified by science and aided with computational intelligence, we will simplify the cumbersome manual calculations.
+      This enables everyone to know quickly the relationship between oneself and the world, and adopting our customized natural therapy, 
+      the users can maintain their body and mind in their best state."
+    />
+    <meta name="apple-mobile-web-app-title" content="ISCIM" />
+    <meta name="msapplication-TileColor" content="#b91d47" />
+    <meta name="theme-color" content="#3f51b5" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="icon" type="image/png" href="./r/logo/iscim-logo-03.png" />
+
+    <!-- google fonts__Noto Serif TC -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- css -->
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="stylesheet" href="./style/i-style.css" />
+    <link rel="stylesheet" href="./style/css/PersonalDB.css" />
+      
+    <!-- vue -->
+    <script src="./js/vue.js"></script>
+  </head>
+
+  <body id="top">
+    <section class="common-part">
+      <div id="commonPart"></div>
+    </section>
+
+    <main class="l-main is-PersonalDBS">
+      <div id="content" class="l-content i-PersonalDBS">
+        <section class="l-content__header">
+          <h1 class="l-content__heading">
+            Member List
+          </h1>
+        </section>
+
+        <section class="l-content__body">
+          <div class="i-personal__header">
+            <div class="i-menu__item">
+              <a href="./PersonalDB.html" class="c-button-2">
+                <span class="c-button-2__inner">
+                  Data Management
+                </span>
+              </a>
+            </div>
+            <div class="i-menu__item">
+              <a href="./PersonalDBS.html" class="c-button-2 i-current">
+                <span class="c-button-2__inner">
+                  Permission Management
+                </span>
+              </a>
+            </div>
+          </div>
+          <form class="i-form">
+            <table class="i-form__groups">
+              <thead class="i-form__header">
+                <tr class="i-form__heading text-m">
+                  <th>No</th>
+                  <th>Name</th>
+                  <th>
+                    Crash/Hesitation
+                    <br />
+                    Index
+                  </th>
+                  <th>
+                    Five Traits
+                    <br />
+                    Ratio
+                  </th>
+                  <th>
+                    Body/Mind/Spirit
+                    <br />
+                    Ratio
+                  </th>
+                  <th>
+                    7 Chakras
+                    <br />
+                    Chart
+                  </th>
+                  <th>
+                    Self Chakras
+                    <br />
+                    Chart
+                  </th>
+                  <th>
+                    Whole Chakras
+                    <br />
+                    Chart
+                  </th>
+                </tr>
+                <tr class="i-form__heading-2 text-m">
+                  <th colspan="2"></th>
+                  <th>
+                    <span>60<br/>iPoint</span>
+                  </th>
+                  <th>
+                    <span>60<br/>iPoint</span>
+                  </th>
+                  <th>
+                    <span>60<br/>iPoint</span>
+                  </th>
+                  <th>
+                    <span>150<br/>iPoint</span>
+                  </th>
+                  <th>
+                    <span>200<br/>iPoint</span>
+                  </th>
+                  <th>
+                    <span>300<br/>iPoint</span>
+                  </th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody class="i-form__body">
+                <tr>
+                  <td>0001</td>
+                  <td>
+                    <span>吳一光</span>
+                  </td>
+                  <td>
+                    <input
+                      type="checkbox"
+                      class="shop-check"
+                      value="0"
+                      data-price="60"
+                      data-sum="0"
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="checkbox"
+                      class="shop-check"
+                      value="1"
+                      data-price="60"
+                      data-sum="0"
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="checkbox"
+                      class="shop-check"
+                      value="2"
+                      data-price="60"
+                      data-sum="0"
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="checkbox"
+                      class="shop-check"
+                      value="3"
+                      data-price="100"
+                      data-sum="0"
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="checkbox"
+                      class="shop-check"
+                      value="4"
+                      data-price="200"
+                      data-sum="0"
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="checkbox"
+                      class="shop-check"
+                      value="5"
+                      data-price="300"
+                      data-sum="0"
+                    />
+                  </td>
+                  <td>
+                    <div>
+                      <a
+                        href="/CustomNumbers.html"
+                        class="i-button-2 dis-f-r"
+                      >
+                        <span>
+                          view
+                        </span>
+                      </a>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="i-form__item-sum">
+                  <td colspan="2"></td>
+                  <td class="shop-menu__item" colspan="2">Total</td>
+                  <td class="shop-menu__item" colspan="2">
+                    <span id="shop-sum-all">0</span>
+                  </td>
+                  <td class="shop-menu__item">
+                    iPoint
+                  </td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="i-notice">
+              Reminder：Please click Confirm after checking that the purchased
+              products and iPoints are correct. Once done, iPoints will be
+              deducted directly from your account.
+            </div>
+            <div class="i-menu">
+              <div class="i-menu__item">
+                <a
+                  href="/CustomNumbers.html"
+                  class="c-button-2 dis-f-r"
+                >
+                  <span class="c-button-2__inner">
+                    Confirm
+                  </span>
+                </a>
+              </div>
+            </div>
+          </form>
+          <form class="i-forms">
+            <ul class="i-lists">
+              <li class="i-list">
+                <div class="i-list__item">
+                  <div class="i-form-2__header i-button-3">
+                    <a
+                      href="/CustomNumbers.html"
+                      class="i-form-2__header i-button-2 addBtn"
+                    >
+                      <span>0001</span>
+                      <span>吳一光</span>
+                      <span>2022-04-13</span>
+                    </a>
+                  </div>
+                </div>
+                <table class="i-list__form">
+                  <tbody class="i-list__form-body">
+                    <tr>
+                      <td class="i-form-2__item" colspan="2">
+                        Crash/Hesitation Index
+                      </td>
+                      <td>
+                        <input
+                          type="checkbox"
+                          class="shop-check"
+                          value="0"
+                          data-price="60"
+                          data-sum="0"
+                        />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="i-form-2__item" colspan="2">
+                        Five Traits Ratio
+                      </td>
+                      <td>
+                        <input
+                          type="checkbox"
+                          class="shop-check"
+                          value="1"
+                          data-price="60"
+                          data-sum="0"
+                        />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="i-form-2__item" colspan="2">
+                        Body/Mind/Spirit Ratio
+                      </td>
+                      <td>
+                        <input
+                          type="checkbox"
+                          class="shop-check"
+                          value="2"
+                          data-price="60"
+                          data-sum="0"
+                        />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="i-form-2__item" colspan="2">
+                        7 Chakras Chart
+                      </td>
+                      <td>
+                        <input
+                          type="checkbox"
+                          class="shop-check"
+                          value="3"
+                          data-price="150"
+                          data-sum="0"
+                        />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="i-form-2__item" colspan="2">
+                        Self Chakras Chart
+                      </td>
+                      <td>
+                        <input
+                          type="checkbox"
+                          class="shop-check"
+                          value="4"
+                          data-price="200"
+                          data-sum="0"
+                        />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="i-form-2__item" colspan="2">
+                        Whole Chakras Chart
+                      </td>
+                      <td>
+                        <input
+                          type="checkbox"
+                          class="shop-check"
+                          value="5"
+                          data-price="300"
+                          data-sum="0"
+                        />
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li class="i-list__hr"></li>
+              <li class="i-list i-list__sum">
+                <table class="i-list__form">
+                  <tbody class="i-list__form-body">
+                    <tr>
+                      <td class="i-form-2__item i-price w-100">
+                        Total：
+                      </td>
+                      <td>
+                        <div class="i-price w-70">
+                          <span id="shop-sum-all-s">0</span>
+                        </div>
+                      </td>
+                      <td>
+                        <span>iPoints</span>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+            </ul>
+            <div class="i-notice">
+              Reminder：Please click Confirm after checking that the purchased
+              products and iPoints are correct. Once done, iPoints will be
+              deducted directly from your account.
+            </div>
+            <div class="i-menu">
+              <div class="i-menu__item">
+                <a
+                  href="/CustomNumbers.html"
+                  class="c-button-2 dis-f-r"
+                >
+                  <span class="c-button-2__inner">
+                    Confirm
+                  </span>
+                </a>
+              </div>
+            </div>
+          </form>
+        </section>
+      </div>
+    </main>
+    <footer id="iFoot"></footer>
+
+    <!-- vue -->
+    <script src="./js/vue/vueCommonPart.js"></script>
+    <!-- JS -->
+    <script src="./js/v2.0/analytics.js"></script>
+    <script src="./js/v2.0/lib.js"></script>
+    <script src="./js/v2.0/bundle.js"></script>
+    <script src="./js/scroll.js"></script>
+    <script
+      type="text/javascript"
+      src="./js/v2.0/wp-embed.js"
+      id="wp-embed-js"
+    ></script>
+    <script src="./js/Store.js"></script>
+  </body>
+</html>

@@ -1,0 +1,90 @@
+@import "../Common/base", "../Common/header", "../Common/nav", "../Common/btn";
+
+
+.c-heading{
+  line-height: 1.2;
+}
+
+.optionGroup{
+  display: flex;
+  width: 80%;
+  margin: auto;
+  .logoBox{
+    width: 40%;
+    margin: auto;
+    img{
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  }
+  .btnGroup{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin: 0 auto 20px;
+    justify-content: center;
+    .introBtn, .serveBtn{
+      cursor: pointer;
+      width: 80%;
+      border: 1px solid gray;
+      padding: 10px;
+      margin: 10px auto;
+      border-radius: 10px;
+      background-color: rgba(220,216,216,62%);
+      &:hover{
+        background-color: rgb(198, 151, 32);
+        color: white;
+      }
+    }
+  }
+}
+.introHeader{
+  margin: 10px 0 10px;
+}
+
+
+@media screen and (max-width: 1023px) {
+  .optionGroup{
+    flex-direction: column;
+    .btnGroup{
+      width: 80%;
+      flex-direction: row;
+      .introBtn, .serveBtn{
+        width: 40%;
+      }
+    }
+  }
+}
+@media (max-width: 767px) {
+  .optionGroup{
+    .logoBox{
+      width: 80%;
+    }
+    .btnGroup{
+      width: 100%;
+      .introBtn, .serveBtn{
+        padding: 5px;
+      }
+      .c-heading{
+        font-size: 1.2rem;
+      }
+    }
+  }
+  .introHeader h1{
+    font-size: 1.2rem;
+  }
+  .introContent li{
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 540px){
+  .optionGroup{
+    .btnGroup{
+      flex-direction: column;
+      .introBtn, .serveBtn{
+        width: 80%;
+      }
+    }
+  }
+}

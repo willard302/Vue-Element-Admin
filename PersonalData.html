@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html
+  lang="zh-hant"
+  class="js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths is-pc is-chrome is-page-open"
+>
+  <head>
+    <meta charset="UTF-8" />
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>iSCIM | Personal Data</title>
+    <meta
+      name="iSCIM"
+      content="The wisdom and ingenious computational power of ancient people are revealed by the Bazi of the East or the Numerology of the West.
+      In this Internet Age, verified by science and aided with computational intelligence, we will simplify the cumbersome manual calculations.
+      This enables everyone to know quickly the relationship between oneself and the world, and adopting our customized natural therapy, 
+      the users can maintain their body and mind in their best state."
+    />
+    <meta name="apple-mobile-web-app-title" content="ISCIM" />
+    <meta name="msapplication-TileColor" content="#b91d47" />
+    <meta name="theme-color" content="#3f51b5" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="icon" type="image/png" href="./r/logo/iscim-logo-03.png" />
+
+    <!-- google fonts__Noto Serif TC -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- css -->
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="stylesheet" href="./style/css/PersonalData.css" />
+    <!-- vue -->
+    <script src="./js/vue.js"></script>
+    <script src="./js/imask.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+  </head>
+
+  <body id="top">
+    <section class="common-part">
+      <div id="commonPart"></div>
+    </section>
+
+    <main class="l-main is-PersonalHome">
+      <div id="content" class="l-content i-PersonalData">
+        <section class="l-content__header">
+          <h1 class="c-heading c-text-mask js-text-anim">
+            <span id="personalName">一晃's</span> | Personal Data
+          </h1>
+        </section>
+
+        <section class="l-content__body">
+          <div class="c-form">
+            <form
+              ref="infoForm"
+              id="infoForm"
+              class="complete"
+              action="/"
+              method="GET"
+            >
+              <div class="personal-form dis-f-r">
+                <div class="personal-form__item-img">
+                  <label for="fileUpload">
+                    <input id="fileUpload" type="file" accept="image/*" />
+                    <img id="imageView" src="./r/model02w.png" />
+                  </label>
+                </div>
+              </div>
+              <div class="personal-form__groups">
+                <div class="c-form__group">
+                  <div class="c-form__header">
+                    <p class="c-form__heading">
+                      <span class="input-item">Account</span>
+                    </p>
+                  </div>
+                  <div class="c-form__body">
+                    <input
+                      name="account"
+                      type="email"
+                      class="form-control"
+                      readonly="readonly"
+                      value="iscim666@gmail.com"
+                      disabled
+                    />
+                  </div>
+                </div>
+                <div class="c-form__group">
+                  <div class="c-form__header">
+                    <p class="c-form__heading">
+                      <label class="input-item">Name</label>
+                    </p>
+                  </div>
+                  <div class="c-form__body">
+                    <input
+                      required
+                      name="realName"
+                      type="text"
+                      class="form-control id-text"
+                      placeholder="ISCIM"
+                      value=""
+                    />
+                  </div>
+                </div>
+                <div class="c-form__group">
+                  <div class="c-form__header">
+                    <p class="c-form__heading compute-data">
+                      <span>Gender</span>
+                    </p>
+                  </div>
+                  <div class="c-form__body">
+                    <div class="c-form-select-wrap">
+                      <select
+                        name="gender"
+                        class="form-select gender-opt"
+                        aria-label=".form-select-sm example"
+                        required
+                      >
+                        <option value="">Please Select</option>
+                        <option value="1">Gentleman</option>
+                        <option value="2">Lady</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="c-form__group date__group">
+                  <div class="c-form__header date__header">
+                    <p class="c-form__heading date__heading compute-data">
+                      <span>Birthdate</span>
+                    </p>
+                  </div>
+                  <div class="c-form__body date__body">
+                    <input
+                      id="dateMonthYear"
+                      name="birthDate"
+                      type="text"
+                      class="form-control date-year"
+                      value="1900-01-01"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="c-form__group time__group">
+                  <div class="c-form__header time__header">
+                    <p class="c-form__heading time__headgin compute-data">
+                      <span>Birthtime</span>
+                    </p>
+                  </div>
+                  <div class="c-form__body time__body">
+                    <input
+                      id="minHour"
+                      name="birthTime"
+                      type="text"
+                      class="form-control birth-time"
+                      value="00:00"
+                      required
+                    />
+                  </div>
+                </div>
+                <div id="countryForm"></div>
+                <div class="c-form__group">
+                  <div class="c-form__header">
+                    <p class="c-form__heading">
+                      <span>Phone number</span>
+                    </p>
+                  </div>
+                  <div class="c-form__body">
+                    <input
+                      type="tel"
+                      class="form-control"
+                      name="phone"
+                      value=""
+                      placeholder="0966168168"
+                      oninput="
+                        value = value.replace(/[^\d]/g,'');
+                        if(value.length > 10) value = value.slice(0,10)
+                      "
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="c-form__group">
+                  <div class="c-form__header">
+                    <p class="c-form__heading">
+                      <span>Email</span>
+                    </p>
+                  </div>
+                  <div class="c-form__body">
+                    <input
+                      type="email"
+                      class="form-control"
+                      name="email"
+                      value=""
+                      inputmode="email"
+                      placeholder="iscim666@gmail.com"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="c-form__group">
+                  <div class="c-form__header">
+                    <p class="c-form__heading">
+                      <span>Invitation Code</span>
+                    </p>
+                  </div>
+                  <div class="c-form__body">
+                    <input
+                      name="invitationCode"
+                      type="text"
+                      class="form-control"
+                      maxlength="7"
+                      value=""
+                      disabled
+                      readonly
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="i-notice">
+                <p>
+                  NB:
+                  The calculation result of your personal horoscope can be affected by the above personal data such as: 
+                  <span class="compute-data">gender, birthdate, birthtime, region of birth, geo of birth (latitude and longitude).</span>
+                  At most three revisions are allowed. 
+                  Currently, you have <span style="font-weight: 700; ">3</span> more edits left.
+                </p>
+              </div>
+              <div class="i-menu">
+                <div class="i-menu__item">
+                  <a href="./PersonalHome.html" class="c-button-2">
+                    <span class="c-button-2__inner">
+                      Return
+                    </span>
+                  </a>
+                </div>
+                <div class="i-menu__item">
+                  <button type="submit" class="c-button-2 c-button-2__inner">
+                    Save
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer id="iFoot"></footer>
+
+    <!-- vue -->
+    <script src="./js/vue/vueCommonPart.js"></script>
+    <script src="./js/vue/vueCity.js"></script>
+    <!-- JS -->
+    <script src="./js/v2.0/analytics.js"></script>
+    <script src="./js/v2.0/lib.js"></script>
+    <script src="./js/v2.0/bundle.js"></script>
+    <script src="./js/scroll.js"></script>
+    <script
+      type="text/javascript"
+      src="./js/v2.0/wp-embed.js"
+      id="wp-embed-js"
+    ></script>
+    <script src="./js/PersonalData.js"></script>
+    <!-- imask -->
+    <script src="./js/imask/datePicker.js"></script>
+    <script src="./js/imask/timePicker.js"></script>
+  </body>
+</html>

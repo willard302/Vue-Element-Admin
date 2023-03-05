@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html
+  lang="zh-hant"
+  class="js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths is-pc is-chrome is-page-open"
+>
+  <head>
+    <meta charset="UTF-8" />
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>iSCIM | Invest</title>
+    <meta
+      name="iSCIM"
+      content="The wisdom and ingenious computational power of ancient people are revealed by the Bazi of the East or the Numerology of the West.
+      In this Internet Age, verified by science and aided with computational intelligence, we will simplify the cumbersome manual calculations.
+      This enables everyone to know quickly the relationship between oneself and the world, and adopting our customized natural therapy, 
+      the users can maintain their body and mind in their best state."
+    />
+    <meta name="apple-mobile-web-app-title" content="ISCIM" />
+    <meta name="msapplication-TileColor" content="#b91d47" />
+    <meta name="theme-color" content="#3f51b5" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="icon" type="image/png" href="./r/logo/iscim-logo-03.png" />
+
+    <!-- google fonts__Noto Serif TC -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC&display=swap"
+      rel="stylesheet"
+    />
+    <!-- css -->
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="stylesheet" href="./style/css/PersonalInvest.css" />
+    <!-- vue -->
+    <script src="./js/vue.js"></script>
+  </head>
+
+  <body id="top">
+    <section class="common-part">
+      <div id="commonPart"></div>
+    </section>
+
+    <main class="l-main is-Invest">
+      <div id="content" class="l-content i-Invest">
+        <section class="l-content__header">
+          <h1 class="l-content__heading">
+            Personal Traits
+            <br />
+            Questionnaire
+          </h1>
+          <div class="i-notice">
+            <p>
+              The purpose of this questionnaire is to assist in the study of the
+              relationship between birthdate and individual constitution and
+              traits. The results of the analysis can assist in academic
+              research and provide applications in clinical psychological
+              counseling and health advice. Your answers are for academic
+              research purposes only.
+            </p>
+            <p>
+              Any information that may disclose your identity is protected by
+              personal data laws and is considered strictly confidential. When
+              you check "I agree", it is understood that you have read and
+              accepted the content and regulations of this questionnaire. Thank
+              you for your help.
+            </p>
+          </div>
+        </section>
+
+        <section class="l-content__body">
+          <form action="./PersonalInvestDone.html">
+            <div class="i-Invest__group">
+              <h3 class="c-heading c-text-mask js-text-anim">Personal Information</h3>
+              <div class="c-form i-Invest__content">
+                  <div class="c-form__group">
+                      <div class="c-form__header">
+                          <p class="c-form__heading">
+                              <span>Name</span>
+                          </p>
+                      </div>
+                      <div class="c-form__body">
+                          <input class="form-control" type="text" id="input-name" name="name" autofocus
+                              required />
+                      </div>
+                  </div>
+                  <div class="c-form__group">
+                      <div class="c-form__header">
+                          <p class="c-form__heading">
+                              <span>Gender</span>
+                          </p>
+                      </div>
+                      <div class="c-form__body">
+                          <div id="selGender" class="c-form-select-wrap">
+                              <select name="gender" class="form-select gender-opt" required>
+                                  <option value="" disabled selected>Please Select</option>
+                                  <option v-for="option in options" :value='option.value'>{{option.text}}</option>
+                              </select>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="c-form__group">
+                      <div class="c-form__header">
+                          <p class="c-form__heading">
+                              <span>Tall</span>
+                              <span>(cm)</span>
+                          </p>
+                      </div>
+                      <div class="c-form__body">
+                          <input 
+                            id="input-tall" 
+                            name="tall" 
+                            type="text" 
+                            class="form-control" 
+                            oninput = "value=value.replace(/[^\d]/g,'')"
+                            required 
+                          />
+                      </div>
+                  </div>
+                  <div class="c-form__group">
+                      <div class="c-form__header">
+                          <p class="c-form__heading">
+                              <span>Weight</span>
+                              <span>(kg)</span>
+                          </p>
+                      </div>
+                      <div class="c-form__body">
+                          <input 
+                            id="input-weight" 
+                            name="weight" 
+                            type="text" 
+                            oninput = "value=value.replace(/[^\d]/g,'')"
+                            class="form-control" 
+                            required 
+                          />
+                      </div>
+                  </div>
+                  <div class="c-form__group">
+                      <div class="c-form__header">
+                          <p class="c-form__heading">
+                              <span>Degree</span>
+                          </p>
+                      </div>
+                      <div class="c-form__body">
+                          <div class="c-form-select-wrap">
+                              <select id="selDegree" name="education-level"
+                                  class="form-select gender-opt" required>
+                                  <option value="" selected disabled>Please Select</option>
+                                  <option v-for="option in options" value="option.value">{{option.text}}</option>
+                              </select>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <div class="i-Invest__group">
+              <h3 class="c-heading c-text-mask js-text-anim">Questionnaire</h3>
+              <div class="js-fadein i-Invest__content">
+                  <div class="i-form-5__group">
+                      <div class="i-form-5__header">
+                          <p class="i-form-5__heading">
+                              <span>
+                                  1、How much time do you spend exercising each week ?
+                              </span>
+                          </p>
+                      </div>
+                      <div class="c-form-select-wrap i-form-5__body">
+                          <select id="habit_exercise" name="habit-exercise" class="form-select" required>
+                              <option value="" disabled selected>
+                                Please Select
+                              </option>
+                              <option v-for="option in options" value="option.value" >
+                                {{option.text}}
+                              </option>
+                          </select>
+                      </div>
+                  </div>
+                  <div class="i-form-5__group">
+                      <div class="i-form-5__header">
+                          <p class="i-form-5__heading">
+                              <span>2、What is your average monthly income ?</span>
+                          </p>
+                      </div>
+                      <div class="c-form-select-wrap i-form-5__body">
+                          <select id="salary" name="salary" class="form-select" required>
+                              <option value="" disabled selected>
+                                Please Select
+                              </option>
+                              <option v-for="option in options" value="option.value">
+                                  {{option.text}}
+                              </option>
+                          </select>
+                      </div>
+                  </div>
+                  <div class="i-form-5__group">
+                      <div class="i-form-5__header">
+                          <p class="i-form-5__heading">
+                              <span>3、What kind of industry do you work in ?</span>
+                          </p>
+                      </div>
+                      <div class="c-form-select-wrap i-form-5__body">
+                          <select id="occupation" name="occupation" class="form-select" required>
+                              <option value="" selected disabled>
+                                Please Select
+                              </option>
+                              <option 
+                                v-for="option in options" 
+                                value="option.value" 
+                                id="option.name"
+                              >
+                                {{option.text}}
+                            </option>
+                          </select>
+                      </div>
+                  </div>
+                  <div class="i-form-5__group">
+                      <div class="i-form-5__header">
+                          <p class="i-form-5__heading">
+                              <span>
+                                  4、Which of the following is closest to your current job title ?
+                              </span>
+                          </p>
+                      </div>
+                      <div class="c-form-select-wrap i-form-5__body">
+                          <select 
+                            id="jobtitle" 
+                            name="jobtitle" 
+                            class="form-select" 
+                            required
+                          >
+                            <option value="" selected disabled>
+                              Please Select
+                            </option>
+                            <option 
+                              v-for="option in options" 
+                              value="option.value" 
+                              id="option.name"
+                            >
+                              {{option.text}}
+                            </option>
+                          </select>
+                      </div>
+                  </div>
+                  <div class="i-form-5__group">
+                      <div class="i-form-5__header">
+                          <p class="i-form-5__heading">
+                              <span>
+                                  5、Most of the time, how do you feel about treating people ?
+                              </span>
+                          </p>
+                      </div>
+                      <div class="c-form-select-wrap i-form-5__body">
+                          <select 
+                            id="character-person" 
+                            name="character-person" 
+                            class="form-select"
+                            required
+                          >
+                            <option value="" selected disabled>
+                              Please Select
+                            </option>
+                            <option 
+                              v-for="option in options" 
+                              :value="option.value" 
+                              :id="option.name"
+                            >
+                              {{option.text}}
+                            </option>
+                          </select>
+                      </div>
+                  </div>
+                  <div class="i-form-5__group">
+                      <div class="i-form-5__header">
+                          <p class="i-form-5__heading">
+                              <span>
+                                  6、Most of the time, how do you usually feel at work？
+                              </span>
+                          </p>
+                      </div>
+                      <div class="c-form-select-wrap i-form-5__body">
+                        <select 
+                          id="attitude-thing" 
+                          name="attitude-thing" 
+                          class="form-select" 
+                          required
+                        >
+                          <option value="" selected disabled>
+                            Please Select
+                          </option>
+                          <option 
+                            v-for="option in options" 
+                            :value="option.value" 
+                            :id="option.name"
+                          >
+                            {{option.text}}
+                          </option>
+                        </select>
+                      </div>
+                  </div>
+                  <div class="i-form-5__group">
+                    <div class="i-form-5__header">
+                      <p class="i-form-5__heading">
+                        <span>
+                          7、What are you going to do if you win the lottery ?(Multiple answers)
+                        </span>
+                      </p>
+                    </div>
+                    <div id="lotteryChoice" class="i-form-5__body">
+                      <div 
+                        class="i-form-5__item i-form-5__item-1" 
+                        v-for="item in items"
+                      >
+                        <input 
+                          type="checkbox" 
+                          :id="item.id" 
+                          name="lottery-choice[]" 
+                          :value="item.value" 
+                        />
+                        <label for="item.id">{{item.text}}</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="i-form-5__group">
+                    <div class="i-form-5__header">
+                      <p class="i-form-5__heading">
+                        <span>
+                          8、Which organs/systems in your body seem weak ? (Multiple answers)
+                        </span>
+                      </p>
+                    </div>
+                    <div id="healthChoice" class="i-form-5__body">
+                      <div class="i-form-5__item" v-for="item in items">
+                        <input 
+                          type="checkbox" 
+                          :id="item.id"
+                          :value="item.value"
+                        />
+                        <label for="item.id">{{item.text}}</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="i-menu">
+                    <div class="i-menu__item">
+                      <a href="./PersonalHome.html" class="c-button-2">
+                        <span class="c-button-2__inner">
+                          RETURN
+                        </span>
+                      </a>
+                    </div>
+                    <div class="i-menu__item">
+                      <button type="submit" class="c-button-2 c-button-2__inner">
+                        Confirm
+                      </button>
+                    </div>
+                  </div>
+              </div>
+          </div>
+          </form>
+        </section>
+      </div>
+    </main>
+    <footer id="iFoot"></footer>
+
+    <!-- vue -->
+    <script src="./js/vue/vueCommonPart.js"></script>
+    <!-- JS -->
+    <script src="./js/v2.0/analytics.js"></script>
+    <script src="./js/v2.0/lib.js"></script>
+    <script src="./js/v2.0/bundle.js"></script>
+    <script src="./js/scroll.js"></script>
+    <script
+      type="text/javascript"
+      src="./js/v2.0/wp-embed.js"
+      id="wp-embed-js"
+    ></script>
+    <!-- vue -->
+    <script src="./js/vue/vueInvest.js"></script>
+  </body>
+</html>

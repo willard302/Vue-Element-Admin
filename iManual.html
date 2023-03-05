@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="zh-hant" class="js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths is-pc is-chrome is-page-open">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>iSCIM | iManual</title>
+    <meta
+      name="iSCIM"
+      content="The wisdom and ingenious computational power of ancient people are revealed by the Bazi of the East or the Numerology of the West.
+      In this Internet Age, verified by science and aided with computational intelligence, we will simplify the cumbersome manual calculations.
+      This enables everyone to know quickly the relationship between oneself and the world, and adopting our customized natural therapy, 
+      the users can maintain their body and mind in their best state."
+    />
+    <meta name="apple-mobile-web-app-title" content="ISCIM" />
+    <meta name="msapplication-TileColor" content="#b91d47" />
+    <meta name="theme-color" content="#3f51b5" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+    <link rel = "icon" type = "image/png" href = "./r/logo/iscim-logo-03.png">
+    
+    <!-- google fonts__Noto Serif TC -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC&display=swap" rel="stylesheet">
+
+    <!-- css -->
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="stylesheet" href="./style/css/iManual.css"/>
+
+    <!-- vue -->
+    <script src="./js/vue.js"></script>
+  </head>
+
+  <body id="top">
+    <section class="common-part">
+      <div id="commonPart"></div>
+    </section>
+
+    <main class="l-main is-iManual">
+      <div id="content" class="l-content p-numbers iManual">
+        <section class="l-content__header">
+          <h1 class="l-content__heading">
+          </h1>
+        </section>
+
+        <section class="l-content__body">
+          <div>
+            <h3 class="c-heading c-text-mask js-text-anim"> iManual</h3>
+            <div class="iManual_group dis-f-r">
+              <div class="iLogo">
+                <img src="./r/logo/iscim-logo-04.png" alt="iSCIM">
+              </div>
+              <div id="manualList"></div>
+            </div>
+          </div>
+          <div class="i-notice">
+            <p>
+              By choosing to continue, it is understood that you agree to
+              our《 
+              <a
+                href="./Service.html"
+                target="_blank"
+                style="color: blue;"
+              >
+                Terms of Service
+              </a>
+              》and《
+              <a
+                href="./Privacy.html"
+                target="_blank"
+                style="color: blue;"
+              >
+                Privacy Policy
+              </a>
+              》
+            </p>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer id="iFoot"></footer>
+
+    <!-- vue -->
+    <script src="./js/vue/vueCommonPart.js"></script>
+    <!-- JS -->
+    <script src="./js/v2.0/analytics.js"></script>
+    <script src="./js/v2.0/lib.js"></script>
+    <script src="./js/v2.0/bundle.js"></script>
+    <script src="./js/scroll.js"></script>
+    <script 
+      type="text/javascript" 
+      src="./js/v2.0/wp-embed.js" 
+      id="wp-embed-js"
+    ></script>
+    <script>
+      new Vue({
+        el:'#manualList',
+        data:{
+          items:[
+              {
+                link:'#',
+                download:'./Document/ISCIM使用手冊_註冊.pdf',
+                title:'1. iSCIM使用手冊_註冊篇'
+              },
+              {
+                link:'#',
+                download:'./Document/ISCIM使用手冊_購買點數.pdf',
+                title:'2. iSCIM使用手冊_購買點數'
+              },
+              {
+                link:'#',
+                download:'./Document/ISCIM使用手冊_Member_List.pdf',
+                title:'3. ISCIM使用手冊_Member List'
+              },
+            ]
+        },
+        template:`
+          <div>
+            <ul>
+              <li v-for="item in items" class="c-button">
+                <a :href="item.link" :download="item.download">
+                  {{item.title}}
+                </a>
+              </li>
+            </ul>
+          </div>
+        `
+      })
+    </script>
+  </body>
+</html>

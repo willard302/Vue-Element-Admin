@@ -1,0 +1,141 @@
+@import "../Common/base", "../Common/header", "../Common/nav", "../Common/menu", "../Common/Personal";
+
+.inviteGroup{
+    margin: 0 auto;
+    text-align: center;
+    button[type=button].c-button-2{
+        padding: 10px;
+        width: 120px;
+        font-weight: 400;
+        text-align: center;
+    }
+}
+.i-menu_group{
+    width: 600px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    .i-menu {
+        flex-direction: column;
+        .c-button-2 {
+            width: 250px;
+            padding: 15px 30px;
+        }
+    }
+}
+.personal-form__groups {
+    margin-left: 50px;
+    .personal-form__group {
+        margin: 15px auto;
+        .personal-form__header {
+            margin: 5px auto;
+            .personal-form__heading {
+                span{
+                    font-size: 2.4rem;
+                    font-weight: bold;
+                }
+            }
+        }
+        .personal-form__body {
+            margin: 10px auto;
+            input{
+                width: 100%;
+                text-align: center;
+                font-size: 2rem;
+                border: none;
+                border-bottom: 1px solid #CD9B8C;
+                &:hover{
+                    transform: translateX(10px);
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .inviteGroup{
+        button[type=button].c-button-2{
+            width: 110px;
+        }
+    }
+    .personal-form__groups{
+        .personal-form__group{
+            .personal-form__header{
+                .personal-form__heading {
+                    span{
+                        font-size: 2rem;
+                    }
+                }
+            }
+            .personal-form__body {
+                input{
+                    font-size: 1.6rem;
+                }
+            }
+        }
+    }
+    
+    
+}
+
+@media screen and (max-width: 767px) {
+    .l-content__header {
+        font-size: 3.6rem;
+    }
+    .personal-form{
+        margin-bottom: 10px;
+    }
+    .personal-form__groups {
+        margin-left: 0;
+        margin: 20px auto 0;
+    }    
+    .i-menu_group{
+        width: 330px;
+        margin: auto;
+        .i-menu{
+            .c-button-2{
+                width: 148px;
+                padding: 10px 0px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 400px){
+    .l-content__heading{
+        font-size: 3rem;
+    }
+    .personal-form__groups{
+        .personal-form__group{
+            .personal-form__header{
+                .personal-form__heading{
+                    span{
+                        font-size: 1.6rem;
+                    }
+                }
+            }
+        }
+    }
+    .inviteGroup{
+        button[type=button].c-button-2{
+            height: 48px;
+        }
+    }
+
+    .i-menu_group{
+        width: 93.255%;
+        .i-menu{
+            .c-button-2{
+                width: 100px;
+                height: 48px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                line-height: 1.2;
+                .c-button-2__inner{
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+}

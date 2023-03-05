@@ -1,0 +1,45 @@
+@import "../Common/base", "../Common/header", "../Common/nav";
+
+main.is-iManual{
+    div.iManual_group{
+        div.iLogo{
+            text-align: center;
+            img{
+                width: 200px;
+            }
+        }
+        div{
+            ul{
+                li.c-button{
+                    display: block;
+                    font-size: 2rem;
+                    height: 30px;
+                }
+            }
+        }
+    }
+
+    div.i-notice{
+        margin-bottom: 20px;
+    }
+}
+
+
+
+@media screen and (max-width: 767px) {
+    main.is-iManual{
+        div.iManual_group{
+            flex-direction: column;
+            div.iLogo{
+                margin: 20px auto;
+            }
+            div{
+                ul{
+                    li.c-button{
+                        font-size: 1.6rem;
+                    }
+                }
+            }
+        }
+    }
+}
