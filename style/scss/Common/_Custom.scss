@@ -8,12 +8,12 @@
 .i-heading br {
   display: none;
 }
-@media screen and (max-width: 1023px) {
+@media (max-width: 1023px) {
   .i-heading {
     font-size: 3.6rem;
   }
 }
-@media screen and (max-width: 767px) {
+@media (max-width: 767px) {
   .i-heading {
     line-height: 1.5;
   }
@@ -21,7 +21,7 @@
     display: block;
   }
 }
-@media screen and (max-width: 560px) {
+@media (max-width: 560px) {
   .i-heading{
     font-size: 2.4rem;
     text-align: center;

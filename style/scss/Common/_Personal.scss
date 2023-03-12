@@ -2,7 +2,7 @@
     display: flex;
 }
 
-@media screen and (max-width: 767px) {
+@media (max-width: 767px) {
     .personal-title {
         display: flex;
         justify-content: center;
@@ -14,7 +14,7 @@
     margin: 60px auto;
 }
 
-@media screen and (max-width: 767px) {
+@media (max-width: 767px) {
     .personal-form {
         flex-direction: column;
         align-items: center;
@@ -44,14 +44,14 @@
     height: 30rem;
 }
 
-// @media screen and (max-width: 1023px) {
+// @media (max-width: 1023px) {
 //     .personal-form__item-img {
 //         width: 250px;
 //         height: 250px;
 //     }
 // }
 
-@media screen and (max-width: 767px) {
+@media (max-width: 767px) {
     .personal-form__item-img {
         width: 200px;
     }

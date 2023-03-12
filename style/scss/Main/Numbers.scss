@@ -114,7 +114,7 @@ form.i-forms {
   }
 }
 
-@media screen and (max-width: 1023px) {
+@media (max-width: 1023px) {
   .p-chart__box{
     .p-chart__box-img {
       flex: 1 1 50%;
@@ -128,7 +128,7 @@ form.i-forms {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media (max-width: 767px) {
   .c-heading {
     margin-bottom: 0;
   }
@@ -161,7 +161,7 @@ form.i-forms {
   }
 }
 
-@media screen and (max-width: 450px) {
+@media (max-width: 450px) {
   .c-form__heading {
     font-size: 1.2rem
   }

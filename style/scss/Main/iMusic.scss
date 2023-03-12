@@ -378,7 +378,7 @@ body {
 
 
 
-@media screen and (max-width: 1023px){
+@media (max-width: 1023px){
   .iMusicPlayer{
     flex-direction: column;
     .iMusicPlayer_group{
@@ -398,7 +398,7 @@ body {
   }
 }
 
-@media screen and (max-width: 767px){
+@media (max-width: 767px){
   .iMusicMenu_content{
     width: 380px;
     .music-form{
@@ -408,7 +408,7 @@ body {
     }
   }
 }
-@media screen and (max-width: 540px){
+@media (max-width: 540px){
   .l-content__body{
     max-width: 98%;
   }

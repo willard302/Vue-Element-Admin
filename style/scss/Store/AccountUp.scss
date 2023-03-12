@@ -127,7 +127,7 @@
     top: 1px;
 }
 
-@media screen and (max-width: 1023px) {
+@media (max-width: 1023px) {
     .account-form-1__header tr th {
         font-size: 1.2rem;
     }
@@ -142,7 +142,7 @@
     }
 }
 
-@media screen and (max-width: 767px) {
+@media (max-width: 767px) {
     .account-form-1 {
         display: none;
     }
@@ -200,7 +200,7 @@
     }
 }
 
-@media screen and (max-width: 420px) {
+@media (max-width: 420px) {
     .account-form-1s__heading {
         font-size: 2rem;
     }

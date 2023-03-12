@@ -27,7 +27,7 @@
   font-size: 1.4rem;
 }
 
-@media screen and (max-width: 767px) {
+@media (max-width: 767px) {
   .l-content__heading {
     text-align: center;
   }
@@ -42,7 +42,7 @@
     }
 }
 }
-@media screen and (max-width: 540px) {
+@media (max-width: 540px) {
   .i-list{
     width: 240px;
   }

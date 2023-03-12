@@ -20,7 +20,7 @@
   font-size: 3.6rem;
 }
 
-@media screen and (max-width: 767px) {
+@media (max-width: 767px) {
   .l-content__heading {
     font-size: 2.4rem;
     text-align: center;
@@ -288,7 +288,7 @@ ul {
 }
 
 
-@media screen and (max-width: 1024px) {
+@media (max-width: 1024px) {
   .utubeBox {
     iframe {
       width: 480px;
@@ -296,7 +296,7 @@ ul {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media (max-width: 767px) {
   .l-content__body {
     max-width: 100%;
   }
@@ -308,7 +308,7 @@ ul {
   }
 }
 
-@media screen and (max-width:640px) {
+@media (max-width:640px) {
   .utubeBox {
     iframe {
       width: 96%;
@@ -321,7 +321,7 @@ ul {
   }
 }
 
-@media screen and (max-width: 560px) {
+@media (max-width: 560px) {
   .angleUp {
     bottom: 20px;
     right: 20px;
@@ -329,7 +329,7 @@ ul {
   }
 }
 
-@media screen and (max-width: 360px) {
+@media (max-width: 360px) {
   .angleUp {
     bottom: 10px;
     right: 10px;

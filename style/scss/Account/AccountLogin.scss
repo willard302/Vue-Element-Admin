@@ -11,12 +11,12 @@
   margin: auto;
 }
 
-@media screen and (max-width: 767px) {
+@media (max-width: 767px) {
   .i-account{
     width: 90%;
   }
 }
-@media screen and (max-width: 390px) {
+@media (max-width: 390px) {
   .i-account{
     width: 100%;
   }

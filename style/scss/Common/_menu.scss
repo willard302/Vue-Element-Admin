@@ -16,7 +16,7 @@
     font-size: 1.2rem;
 }
 
-@media screen and (max-width: 767px) {
+@media (max-width: 767px) {
     .i-menu {
         flex-direction: column-reverse;
     }

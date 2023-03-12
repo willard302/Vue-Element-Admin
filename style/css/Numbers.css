@@ -20,7 +20,7 @@
   font-size: 3.6rem;
 }
 
-@media screen and (max-width: 767px) {
+@media (max-width: 767px) {
   .l-content__heading {
     font-size: 2.4rem;
     text-align: center;
@@ -266,12 +266,12 @@ ul {
   font-weight: 700;
 }
 
-@media screen and (max-width: 1024px) {
+@media (max-width: 1024px) {
   .utubeBox iframe {
     width: 480px;
   }
 }
-@media screen and (max-width: 767px) {
+@media (max-width: 767px) {
   .l-content__body {
     max-width: 100%;
   }
@@ -281,7 +281,7 @@ ul {
     font-size: 3.6rem;
   }
 }
-@media screen and (max-width: 640px) {
+@media (max-width: 640px) {
   .utubeBox iframe {
     width: 96%;
     height: 50vw;
@@ -290,14 +290,14 @@ ul {
     width: 96%;
   }
 }
-@media screen and (max-width: 560px) {
+@media (max-width: 560px) {
   .angleUp {
     bottom: 20px;
     right: 20px;
     font-size: 3rem;
   }
 }
-@media screen and (max-width: 360px) {
+@media (max-width: 360px) {
   .angleUp {
     bottom: 10px;
     right: 10px;
@@ -312,12 +312,12 @@ ul {
   right: 120px;
 }
 
-@media screen and (max-width: 1023px) {
+@media (max-width: 1023px) {
   .l-header__group {
     top: 40px;
   }
 }
-@media screen and (max-width: 767px) {
+@media (max-width: 767px) {
   .l-header__group {
     top: 30px;
     right: 80px;
@@ -337,7 +337,7 @@ ul {
   width: 100px;
 }
 
-@media screen and (max-width: 767px) {
+@media (max-width: 767px) {
   .l-header__item input,
   .l-header__item label {
     width: 80px;
@@ -348,7 +348,7 @@ ul {
   margin-right: 10px;
 }
 
-@media screen and (max-width: 767px) {
+@media (max-width: 767px) {
   .l-header__item-ID,
   .l-header__item-VIP {
     display: none;
@@ -512,7 +512,7 @@ ul {
   font-size: 1.2rem;
 }
 
-@media screen and (max-width: 767px) {
+@media (max-width: 767px) {
   .i-menu {
     flex-direction: column-reverse;
   }
@@ -625,7 +625,7 @@ form.i-forms div.c-form__group div.c-form__body div.c-form-select-wrap select {
   height: auto;
 }
 
-@media screen and (max-width: 1023px) {
+@media (max-width: 1023px) {
   .p-chart__box .p-chart__box-img {
     flex: 1 1 50%;
   }
@@ -636,7 +636,7 @@ form.i-forms div.c-form__group div.c-form__body div.c-form-select-wrap select {
     flex-direction: column;
   }
 }
-@media screen and (max-width: 767px) {
+@media (max-width: 767px) {
   .c-heading {
     margin-bottom: 0;
   }
@@ -664,7 +664,7 @@ form.i-forms div.c-form__group div.c-form__body div.c-form-select-wrap select {
     display: none;
   }
 }
-@media screen and (max-width: 450px) {
+@media (max-width: 450px) {
   .c-form__heading {
     font-size: 1.2rem;
   }

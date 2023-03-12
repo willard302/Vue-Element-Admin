@@ -20,7 +20,7 @@
   font-size: 3.6rem;
 }
 
-@media screen and (max-width: 767px) {
+@media (max-width: 767px) {
   .l-content__heading {
     font-size: 2.4rem;
     text-align: center;
@@ -266,12 +266,12 @@ ul {
   font-weight: 700;
 }
 
-@media screen and (max-width: 1024px) {
+@media (max-width: 1024px) {
   .utubeBox iframe {
     width: 480px;
   }
 }
-@media screen and (max-width: 767px) {
+@media (max-width: 767px) {
   .l-content__body {
     max-width: 100%;
   }
@@ -281,7 +281,7 @@ ul {
     font-size: 3.6rem;
   }
 }
-@media screen and (max-width: 640px) {
+@media (max-width: 640px) {
   .utubeBox iframe {
     width: 96%;
     height: 50vw;
@@ -290,14 +290,14 @@ ul {
     width: 96%;
   }
 }
-@media screen and (max-width: 560px) {
+@media (max-width: 560px) {
   .angleUp {
     bottom: 20px;
     right: 20px;
     font-size: 3rem;
   }
 }
-@media screen and (max-width: 360px) {
+@media (max-width: 360px) {
   .angleUp {
     bottom: 10px;
     right: 10px;
@@ -312,12 +312,12 @@ ul {
   right: 120px;
 }
 
-@media screen and (max-width: 1023px) {
+@media (max-width: 1023px) {
   .l-header__group {
     top: 40px;
   }
 }
-@media screen and (max-width: 767px) {
+@media (max-width: 767px) {
   .l-header__group {
     top: 30px;
     right: 80px;
@@ -337,7 +337,7 @@ ul {
   width: 100px;
 }
 
-@media screen and (max-width: 767px) {
+@media (max-width: 767px) {
   .l-header__item input,
   .l-header__item label {
     width: 80px;
@@ -348,7 +348,7 @@ ul {
   margin-right: 10px;
 }
 
-@media screen and (max-width: 767px) {
+@media (max-width: 767px) {
   .l-header__item-ID,
   .l-header__item-VIP {
     display: none;
@@ -512,7 +512,7 @@ ul {
   font-size: 1.2rem;
 }
 
-@media screen and (max-width: 767px) {
+@media (max-width: 767px) {
   .i-menu {
     flex-direction: column-reverse;
   }
@@ -524,7 +524,7 @@ ul {
   display: flex;
 }
 
-@media screen and (max-width: 767px) {
+@media (max-width: 767px) {
   .personal-title {
     display: flex;
     justify-content: center;
@@ -535,7 +535,7 @@ ul {
   margin: 60px auto;
 }
 
-@media screen and (max-width: 767px) {
+@media (max-width: 767px) {
   .personal-form {
     flex-direction: column;
     align-items: center;
@@ -561,7 +561,7 @@ ul {
   height: 30rem;
 }
 
-@media screen and (max-width: 767px) {
+@media (max-width: 767px) {
   .personal-form__item-img {
     width: 200px;
   }
@@ -622,7 +622,7 @@ ul {
   transform: translateX(10px);
 }
 
-@media screen and (max-width: 1023px) {
+@media (max-width: 1023px) {
   .inviteGroup button[type=button].c-button-2 {
     width: 110px;
   }
@@ -633,7 +633,7 @@ ul {
     font-size: 1.6rem;
   }
 }
-@media screen and (max-width: 767px) {
+@media (max-width: 767px) {
   .l-content__header {
     font-size: 3.6rem;
   }
@@ -653,7 +653,7 @@ ul {
     padding: 10px 0px;
   }
 }
-@media screen and (max-width: 400px) {
+@media (max-width: 400px) {
   .l-content__heading {
     font-size: 3rem;
   }

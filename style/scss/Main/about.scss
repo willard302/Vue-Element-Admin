@@ -1,10 +1,6 @@
 @import "../Common/base", "../Common/header", "../Common/nav", "../Common/btn";
 
 
-.c-heading{
-  line-height: 1.2;
-}
-
 .optionGroup{
   display: flex;
   width: 80%;
@@ -23,7 +19,7 @@
     width: 30%;
     margin: 0 auto 20px;
     justify-content: center;
-    .introBtn, .serveBtn{
+    .i-button-2{
       cursor: pointer;
       width: 80%;
       border: 1px solid gray;
@@ -31,10 +27,8 @@
       margin: 10px auto;
       border-radius: 10px;
       background-color: rgba(220,216,216,62%);
-      &:hover{
-        background-color: rgb(198, 151, 32);
-        color: white;
-      }
+      font-size: 1.2rem;
+      height: 40px;
     }
   }
 }
@@ -43,7 +37,7 @@
 }
 
 
-@media screen and (max-width: 1023px) {
+@media (max-width: 1023px) {
   .optionGroup{
     flex-direction: column;
     .btnGroup{
@@ -70,6 +64,10 @@
       }
     }
   }
+  .introGroup{
+    max-width: 90%;
+    margin: auto;
+  }
   .introHeader h1{
     font-size: 1.2rem;
   }
@@ -78,7 +76,7 @@
   }
 }
 
-@media screen and (max-width: 540px){
+@media (max-width: 414px){
   .optionGroup{
     .btnGroup{
       flex-direction: column;

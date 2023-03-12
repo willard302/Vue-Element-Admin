@@ -6,7 +6,7 @@
 .c-form__heading {
   font-size: 2rem;
 }
-@media screen and (max-width: 767px) {
+@media (max-width: 767px) {
   .c-form__heading{
     font-size: 1.5rem;
   }
@@ -17,7 +17,7 @@
 .c-form__body input {
   height: 48px;
 }
-@media screen and (max-width: 767px) {
+@media (max-width: 767px) {
   .c-form__body{
     font-size: 1.3rem;
   }
@@ -112,7 +112,7 @@
   text-align: center;
   font-size: 1.6rem;
 }
-@media screen and (max-width: 767px) {
+@media (max-width: 767px) {
   .login-otherway-text{
     font-size: 1.4rem;
   }
@@ -132,7 +132,7 @@
   margin-left: 5px;
   cursor: pointer;
 }
-@media screen and (max-width: 767px) {
+@media (max-width: 767px) {
   .imgPasw{
     width: 24px
   }

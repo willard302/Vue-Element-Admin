@@ -52,7 +52,7 @@
     }
 }
 
-@media screen and (max-width: 1023px) {
+@media (max-width: 1023px) {
     .inviteGroup{
         button[type=button].c-button-2{
             width: 110px;
@@ -78,7 +78,7 @@
     
 }
 
-@media screen and (max-width: 767px) {
+@media (max-width: 767px) {
     .l-content__header {
         font-size: 3.6rem;
     }
@@ -101,7 +101,7 @@
     }
 }
 
-@media screen and (max-width: 400px){
+@media (max-width: 400px){
     .l-content__heading{
         font-size: 3rem;
     }

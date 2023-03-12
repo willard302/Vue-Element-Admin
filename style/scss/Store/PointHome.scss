@@ -21,19 +21,19 @@
   padding: 10px 15px;
 }
 
-@media screen and (max-width: 767px) {
+@media (max-width: 767px) {
   .i-list {
     width: 50%;
   }
 }
 
-@media screen and (max-width: 500px) {
+@media (max-width: 500px) {
   .i-list {
     width: 250px;
   }
 }
 
-@media screen and (max-width: 1023px) {
+@media (max-width: 1023px) {
   .i-menu {
     flex-direction: column-reverse;
   }

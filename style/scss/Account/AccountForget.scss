@@ -43,7 +43,7 @@
     margin: 40px auto;
 }
 
-@media screen and (max-width: 767px) {
+@media (max-width: 767px) {
     .c-button-2{
         width: 280px;
     }
@@ -58,7 +58,7 @@
     }
 }
 
-@media screen and (max-width: 1023px) {
+@media (max-width: 1023px) {
     .i-verify-content{
         text-align: left;
         width: 100%;
