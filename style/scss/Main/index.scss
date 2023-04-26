@@ -3,16 +3,9 @@
 
 
 .bg{
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-    background-position: center;
-    background-size: cover;
+    width: 100%;
     background-image: url("../../../Data/index/bg01.jpg");
     transition: all 0.6s ease;
-    img{
-        width: 100%;
-    }
 }
 .text{
     position: absolute;

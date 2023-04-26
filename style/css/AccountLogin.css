@@ -358,6 +358,33 @@ ul {
   display: none;
 }
 
+header {
+  width: 100%;
+  height: 50px;
+}
+header svg {
+  padding: 8px 0;
+  margin: 7px 0;
+}
+header svg path {
+  color: white;
+}
+header ul {
+  float: right;
+  clear: both;
+  width: 88%;
+  clear: both;
+}
+header ul li {
+  float: left;
+  margin-right: 1%;
+  padding: 12px 0;
+  width: 9%;
+  word-break: keep-all;
+  text-align: center;
+  line-height: 1;
+}
+
 .navBtn {
   cursor: pointer;
   position: absolute;

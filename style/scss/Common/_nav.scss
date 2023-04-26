@@ -1,165 +1,193 @@
+header{
+  width: 100%;
+  height: 50px;
+  svg{
+    padding: 8px 0;
+    margin: 7px 0;
+    path{
+      color: white;
+    }
+  }
+  ul{
+    float: right;
+    clear: both;
+    width: 88%;
+    li{
+      float: left;
+      margin-right: 1%;
+      padding: 12px 0;
+      width: 9%;
+      word-break: keep-all;
+      text-align: center;
+      line-height: 1;
+    }
+    clear: both;
+  }
+}
+
 .navBtn {
-    cursor: pointer;
-    position: absolute;
-    top: 10px;
-    right: 30px;
-    font-size: 2.4rem;
-    color: black;
-    z-index: 999;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 30px;
+  font-size: 2.4rem;
+  color: black;
+  z-index: 999;
 }
 
 .navBtn.open {
-    color: white;
-    font-size: 3rem;
+  color: white;
+  font-size: 3rem;
 }
 
 .navBoard {
-    position: fixed;
-    right: -100vw;
-    background-color: black;
-    height: 100vh;
-    width: 100vw;
-    padding: 10vh 30vw;
-    overflow: scroll;
-    transition: right 0.3s;
-    z-index: 100;
+  position: fixed;
+  right: -100vw;
+  background-color: black;
+  height: 100vh;
+  width: 100vw;
+  padding: 10vh 30vw;
+  overflow: scroll;
+  transition: right 0.3s;
+  z-index: 100;
 
-    ul {
-        li {
-            font-size: 3rem;
-            font-weight: 500;
-            line-height: 1.4;
+  ul {
+    li {
+      font-size: 3rem;
+      font-weight: 500;
+      line-height: 1.4;
 
-            a {
-                color: white;
+      a {
+        color: white;
 
-                &:hover {
-                    color: goldenrod;
-                    font-weight: 900;
-                }
-            }
+        &:hover {
+          color: goldenrod;
+          font-weight: 900;
         }
+      }
     }
+  }
 }
 
 .navBoard.open {
-    right: 0;
+  right: 0;
 }
 
 .i-foot {
-    color: #CD9B8C;
-    text-align: center;
-    border-top: 1px solid black;
-    margin: 4rem 2.8rem 0;
-    padding: 2vh;
+  color: #CD9B8C;
+  text-align: center;
+  border-top: 1px solid black;
+  margin: 4rem 2.8rem 0;
+  padding: 2vh;
 
-    h2 {
-        font-size: 2.4rem;
-        font-weight: 700;
-        margin: 10px auto;
-    }
+  h2 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    margin: 10px auto;
+  }
 
-    h3 {
-        font-size: 1.4rem;
-        margin: 0 10px auto;
-    }
+  h3 {
+    font-size: 1.4rem;
+    margin: 0 10px auto;
+  }
 
-    .i-foot__content {
-        margin: auto;
-    }
+  .i-foot__content {
+    margin: auto;
+  }
 }
 
 
 .utubeBox {
-    margin: 3px auto;
+  margin: 3px auto;
 
-    iframe {
-        width: 540px;
-        height: 280px;
-        border-radius: 10px;
+  iframe {
+    width: 540px;
+    height: 280px;
+    border-radius: 10px;
+  }
+
+  .utubeMenu {
+    width: 540px;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-evenly;
+
+    button {
+      font-size: 1rem;
+      font-weight: 500;
+      padding: 3px;
+      align-items: center;
+      justify-content: center;
+      width: 100px;
+      color: #262626;
+      background: none;
+      border: 1px solid black;
     }
 
-    .utubeMenu {
-        width: 540px;
-        margin: 10px auto;
-        display: flex;
-        justify-content: space-evenly;
-
-        button {
-            font-size: 1rem;
-            font-weight: 500;
-            padding: 3px;
-            align-items: center;
-            justify-content: center;
-            width: 100px;
-            color: #262626;
-            background: none;
-            border: 1px solid black;
-        }
-
-        .btn1.playing,
-        .btn1:hover {
-            color: white;
-            border: none;
-            background-color: rgb(181, 0, 0);
-        }
-
-        .btn2.playing,
-        .btn2:hover {
-            color: white;
-            border: none;
-            background-color: goldenrod;
-        }
-
-        .btn3.playing,
-        .btn3:hover {
-            color: white;
-            border: none;
-            background-color: green;
-        }
+    .btn1.playing,
+    .btn1:hover {
+      color: white;
+      border: none;
+      background-color: rgb(181, 0, 0);
     }
+
+    .btn2.playing,
+    .btn2:hover {
+      color: white;
+      border: none;
+      background-color: goldenrod;
+    }
+
+    .btn3.playing,
+    .btn3:hover {
+      color: white;
+      border: none;
+      background-color: green;
+    }
+  }
 }
 
 @media (max-width: 767px) {
-    .navBoard {
-        padding: 10vh 20vw;
+  .navBoard {
+    padding: 10vh 20vw;
 
-        ul {
-            li {
-                font-size: 2.4rem;
-            }
-        }
+    ul {
+      li {
+        font-size: 2.4rem;
+      }
+    }
+  }
+
+  .i-foot {
+    h2 {
+      font-size: 1.6rem;
+    }
+  }
+
+  .utubeBox {
+    iframe {
+      width: 90%;
+      height: 40vw;
     }
 
-    .i-foot{
-        h2{
-            font-size: 1.6rem;
-        }
+    .utubeMenu {
+      width: 90%;
+
+      button {
+        width: 30%;
+      }
     }
-
-    .utubeBox {
-        iframe {
-            width: 90%;
-            height: 40vw;
-        }
-
-        .utubeMenu {
-            width: 90%;
-
-            button {
-                width: 30%;
-            }
-        }
-    }
+  }
 }
 
 @media (max-width: 540px) {
-    .i-foot{
-        margin: 0;
+  .i-foot {
+    margin: 0;
+  }
+
+  .utubeBox {
+    iframe {
+      margin: auto;
     }
-    .utubeBox{
-        iframe{
-            margin: auto;
-        }
-    }
+  }
 }
